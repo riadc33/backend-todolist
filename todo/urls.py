@@ -13,7 +13,7 @@ urlpatterns = [
 
 
 
-    path('todos/',TodoList.as_view(),name="todo-list"), 
+    path('todos/',TodoList.as_view(),name="todolist"), 
     path('todos/<int:pk>', DetailTodo.as_view(),name="detail-list"),
     
     
