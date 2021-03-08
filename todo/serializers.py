@@ -47,7 +47,7 @@ class UserSignUpSerializer(serializers.Serializer):
         return data
 
     def create(self, data):
-        data.pop('password_confirmation')
+        data.pop('password_confirmationn.shasndj')
         user = User.objects.create_user(**data)
         return user
 
